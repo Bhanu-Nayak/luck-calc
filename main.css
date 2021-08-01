@@ -1,0 +1,52 @@
+:root{
+    --primary-color: rgb(16, 82, 76);
+    --secondary-color: rgb(84, 233, 233);
+    --white-color: white;
+    --dark-color: rgb(0, 0, 0);
+}
+body{
+    margin: 0%;
+    text-decoration: none;
+    background-color: rgb(16, 82, 76);
+    color: var(--white-color);
+}
+.header{
+    background-color: var(--primary-color);
+    margin: auto;
+    text-align: center;
+}
+.main-input{
+    border: 1px solid var(--secondary-color);
+    border-radius: 1rem;
+    text-align: center;
+    margin: 1rem 0.5rem;
+    box-shadow: 2px 5px var(--secondary-color);
+}
+.submit{
+    margin-top: 0.5rem;
+}
+#submit{
+    display: block;
+    margin: auto;
+    padding: 0.3rem;
+    background-color: transparent;
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    border-radius: 0.3rem;
+    box-shadow: 0.05rem 0.1rem var(--secondary-color);
+}
+input::placeholder{
+    color: var(--dark-color);
+}
+.luck-num, .bday-num{
+    background-color: transparent;
+    padding: 0.5rem;
+    border-radius: 0.5rem; 
+    border: 0.1rem solid var(--secondary-color);   
+}
+.luck-num:hover , .bday-num:hover{
+    transform: scale(1.1);
+}
+.luck-num:active, .bday-num:active{
+    transform: scale(1.1);
+}

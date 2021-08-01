@@ -1,0 +1,8 @@
+const dateOfBirth = document.querySelector("#dateofbirth");
+const luckyNumber = document.querySelector("#lucky-number");
+const checkNumber = document.querySelector("#submit");
+
+
+checkNumber.addEventListener('click', function getvalues(){
+    console.log(dateOfBirth.value , luckyNumber.value);
+})
