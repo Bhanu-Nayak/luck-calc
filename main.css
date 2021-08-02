@@ -3,50 +3,93 @@
     --secondary-color: rgb(84, 233, 233);
     --white-color: white;
     --dark-color: rgb(0, 0, 0);
+    --new-primary: #1C2833;
+    --new-secondary: #2E86C1;
+    --extra-deco: #48C9B0;
 }
 body{
-    margin: 0%;
-    text-decoration: none;
-    background-color: rgb(16, 82, 76);
-    color: var(--white-color);
-}
-.header{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
     background-color: var(--primary-color);
-    margin: auto;
-    text-align: center;
 }
 .main-input{
-    border: 1px solid var(--secondary-color);
-    border-radius: 1rem;
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--new-primary);
     text-align: center;
-    margin: 1rem 0.5rem;
-    box-shadow: 2px 5px var(--secondary-color);
 }
-.submit{
-    margin-top: 0.5rem;
+.main-input h1{
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-weight: 500;
 }
-#submit{
-    display: block;
-    margin: auto;
-    padding: 0.3rem;
-    background-color: transparent;
-    color: var(--secondary-color);
+.main-input label{
+    color: var(--white-color);
+}
+.main-input input[type = "date"], .main-input input[type = "number"]{
+    border: 0;
+    background: none;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid var(--new-secondary);
+    padding: 14px 10px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    width: 280px;
+}
+.main-input input::placeholder{
+    color: var(--white-color);
+}
+.main-input input[type = "date"]:focus, .main-input input[type = "number"]:focus{
+    transform: scale(1.1);
     border-color: var(--secondary-color);
-    border-radius: 0.3rem;
-    box-shadow: 0.05rem 0.1rem var(--secondary-color);
 }
-input::placeholder{
-    color: var(--dark-color);
+.main-input button{
+    border: 0;
+    background: none;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid var(--secondary-color);
+    padding: 14px 40px;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
 }
-.luck-num, .bday-num{
-    background-color: transparent;
-    padding: 0.5rem;
-    border-radius: 0.5rem; 
-    border: 0.1rem solid var(--secondary-color);   
+.main-input button:hover{
+    background: var(--secondary-color);
+    color: var(--new-primary);
 }
-.luck-num:hover , .bday-num:hover{
-    transform: scale(1.1);
+@media (max-width:450px){
+    .main-input{
+        width: 50%;
+        height: 23rem;
+    }
+    .main-input input[type = "date"], .main-input input[type = "number"]{
+        margin: 10px 5px;
+        width: 70%;
+    }
+    .main-input button{
+        margin: 10px auto;
+        padding: 14px 20px;
+    }
 }
-.luck-num:active, .bday-num:active{
-    transform: scale(1.1);
+@media (max-width:370px){
+    .main-input{
+        width: 60%;
+        height: 23rem;
+    }
+}
+@media (max-width:310px){
+    .main-input{
+        width: 70%;
+        height: 27rem;
+    }
 }
