@@ -67,9 +67,6 @@ body{
     background: var(--secondary-color);
     color: var(--new-primary);
 }
-#outbox-box{
-    
-}
 @media (max-width:450px){
     .main-input{
         width: 50%;
@@ -84,15 +81,21 @@ body{
         padding: 14px 20px;
     }
 }
-@media (max-width:370px){
+@media (max-width:390px){
     .main-input{
         width: 60%;
-        height: 23rem;
+        height: 25rem;
     }
 }
-@media (max-width:310px){
+@media (max-width:320px){
     .main-input{
         width: 70%;
         height: 27rem;
+    }
+}
+@media (max-width:320px){
+    .main-input{
+        width: 70%;
+        height: 33rem;
     }
 }
