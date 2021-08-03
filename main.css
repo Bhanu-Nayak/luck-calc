@@ -67,6 +67,9 @@ body{
     background: var(--secondary-color);
     color: var(--new-primary);
 }
+#outbox-box{
+    
+}
 @media (max-width:450px){
     .main-input{
         width: 50%;

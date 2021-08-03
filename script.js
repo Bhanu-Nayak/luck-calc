@@ -8,15 +8,14 @@ function compareValues(sum, luckyNumber){
         outputBox.innerText="Your Birthday is Lucky";
     }
     else{
-        outputBox.I=innerText="Oops! Not So Lucky"
+        outputBox.innerText="Oops! Not So Lucky"
     }
 }
-
 
 function checkBirthDateIsLucky(){
     const dob= dateOfBirth.value;
     const sum = calculateSum(dob);
-    console.log(sum);
+    compareValues(sum, luckyNumber.value)
 }
 
 function calculateSum(dob){
