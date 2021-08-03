@@ -67,6 +67,9 @@ body{
     background: var(--secondary-color);
     color: var(--new-primary);
 }
+#output-box{
+    color: var(--secondary-color);
+}
 @media (max-width:450px){
     .main-input{
         width: 50%;
