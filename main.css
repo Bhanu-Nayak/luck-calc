@@ -73,7 +73,7 @@ body{
 @media (max-width:450px){
     .main-input{
         width: 50%;
-        height: 23rem;
+        height: 24rem;
     }
     .main-input input[type = "date"], .main-input input[type = "number"]{
         margin: 10px 5px;
